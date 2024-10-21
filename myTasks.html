@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks</title>
+    <link rel="stylesheet" href="myTasks.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <script src="create.js"></script>
+    <div class="header">
+        <ul>
+            <li><a href="mainpage.html">TASK TRACK</a></li>
+        </ul>
+        <ul id="reverse">
+            <li><a href="create.html"><i class='bx bx-plus-circle'></i>CREATE</a></li>
+            <li ><a href="calendar.html"><i class='bx bx-calendar'></i>CALENDER</a></li>
+            <li><img src="me.png" alt="Rounded Image" class="rounded-img" onclick="toggleDropdown()">
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <button class="red-button" onclick="window.location.href='homepage.html'">Logout</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="content">
+        <p class="headingg">My Tasks</p>
+        
+    </div>
+</body>
+</html>
