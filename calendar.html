@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="calendar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="mainpage.php">TASK TRACK</a></li>
+        </ul>
+        <ul id="reverse">
+            <li><a href="create.html"><i class='bx bx-plus-circle'></i>CREATE</a></li>
+            <li ><a href="myTasks.php"><i class='bx bx-list-ul'></i>MY TASKS</a></li>
+            <li><img src="me.png" alt="Rounded Image" class="rounded-img" onclick="toggleDropdown()">
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <button class="red-button" onclick="window.location.href='homepage.html'">Logout</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div class="calendar-container">
+        <div class="dropdowns">
+            <select id="month-dropdown">
+                <option value="0">January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+            </select>
+
+            <select id="year-dropdown">
+                <!-- Script to populate years -->
+                <script>
+                    const yearDropdown = document.getElementById('year-dropdown');
+                    const currentYear = new Date().getFullYear();
+                    for (let year = 2000; year <= currentYear + 10; year++) {
+                        const option = document.createElement('option');
+                        option.value = year;
+                        option.textContent = year;
+                        yearDropdown.appendChild(option);
+                    }
+                    yearDropdown.value = currentYear;
+                </script>
+            </select>
+
+            <button onclick="loadTasks()">Show Calendar</button>
+        </div>
+
+        <div id="calendar-grid" class="calendar-grid"></div>
+    </div>
+
+    <script src="calendar.js"></script>
+</body>
+</html>

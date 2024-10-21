@@ -1,0 +1,194 @@
+body {
+    background-image: url('bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.header li {
+    margin-left: 20px;
+}
+.header  a {
+    background: -webkit-linear-gradient(#4161d2, #041141);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+    display: inline-block;
+}
+.header li a:hover {
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color:black;
+    border: 2px solid gray;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 5px 10px;
+}
+#reverse {
+    display: flex;
+    flex-direction: row;
+}
+#reverse li {
+    margin-left: 20px;
+}
+.rounded-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+hr .line{
+    border:none;
+    background-color: #041141;
+    width:2px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color:transparent;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a, .dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown-content a:hover, .dropdown-content button:hover {
+    background-color:darkred;
+    color: white;
+}
+.show {
+    display: block;
+}
+.red-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+}
+.calendar-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdowns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.dropdowns select {
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: white;
+    color: #041141;
+}
+
+button{
+    background-color: #4161d2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #041141;
+}
+.day-cell:hover {
+    background: rgba(4, 17, 65, 0.9);
+}
+
+.weekday-header {
+    font-weight: bolder;
+    background-color: #041141;
+    color: white;
+    min-height: 45px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+#calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);  /* 7 columns for the week */
+    grid-gap: 10px;
+}
+
+.day-cell {
+    min-height: 45px;
+    padding: 15px;
+    background: rgba(65, 97, 210, 0.8);
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    color:white;
+}
+
+.day-cell .task-item {
+    padding: 5px;
+    margin: 2px 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.day-cell .task-item.pending {
+    background-color: red;
+}
+
+.day-cell .task-item.in-progress {
+    background-color: yellow;
+    color: #000;
+}
+
+.day-cell .task-item.completed {
+    background-color: green;
+}
+
+.today {
+    background-color: yellow;
+    color:black;
+}
