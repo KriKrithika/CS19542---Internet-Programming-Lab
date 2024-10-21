@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="homepage.css">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  
+  <div class="banner">
+
+    <div class="header">
+      <ul>
+        <li><a href="homepage.html">TASK TRACK</a></li>
+      </ul>
+      <ul id="reverse">
+        <li><a href="ContactUs.html">CONTACT US</a></li>
+        <li ><a href="AboutUs.html">ABOUT US</a></li>
+        <li ><a href="login.html">LOGIN</a></li>
+      </ul>
+    </div>
+    <hr style="font-size: 5px;"><br>
+    <p id="tag_line">Take control of your Time and </p><p id="tag_line_highlight">Tasks</p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <div class="carousel" >
+            <div class="carousel-item " >
+              <div class="item">
+                <h1>CREATE</h1>
+                Easily add new tasks to your schedule with the Create Task option. Specify task details like title, description, priority, and deadlines, and organize your tasks efficiently. Stay productive by customizing recurring schedules and categories—all in one place!
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="item">
+                <h1>CALENDER</h1>
+                The Calendar option offers a visual layout of your tasks, organized by due dates and deadlines. Easily schedule, reschedule, and view tasks across daily, weekly, or monthly views. Stay on top of your agenda with a clear and interactive timeline!
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="item">
+                <h1>TASK CATEGORIES</h1>
+                The Task Categories feature allows you to organize your tasks with color-coded labels for easy identification. Group tasks by categories such as work, personal, or urgent, and visually manage your priorities at a glance. Stay organized and boost efficiency with a vibrant, clear task structure!
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="item">
+                <h1>PROGRESS TRACKING</h1>
+                The Progress Tracking feature gives you a visual snapshot of your task completion status. Monitor your productivity with insights showing pending versus completed tasks. Stay motivated by seeing your progress and efficiently reach your goals!
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="item">
+                <h1>DASHBOARD</h1>
+                The Dashboard provides an overview of all your tasks, showing both pending and completed items at a glance. Easily track your progress, manage priorities, and stay on top of deadlines with intuitive filters and quick actions. Keep everything organized in one place for maximum productivity!
+              </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.carousel').carousel({
+                    indicators:true
+                });
+            });
+        </script>
+        <br><br><br><br>
+        <div class="footer">
+          <ul>
+            <li><i class='bx bxl-instagram'></i>tasktrack_123</li>
+            <li><i class='bx bxl-facebook-circle' ></i>tasktrack_123</li>
+            <li><i class='bx bxl-whatsapp' ></i>+91 987654321</li>
+            <li><i class='bx bx-phone-call' ></i>+91 987654321</li>
+          </ul>
+        </div>
+
+  </div>
+
+  
+</body>
+</html>
+
